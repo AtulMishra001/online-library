@@ -6,7 +6,16 @@ const Home = () => {
   const books = useSelector(selectBooks);
   // Slice to get the first 3 books
   const popularBooks = books.slice(0, 3);
-  const categories = ["Fiction", "Non-Fiction", "Sci-Fi", "Self-Help"];
+  const categories = [
+    "Fiction",
+    "Non-Fiction",
+    "Sci-Fi",
+    "Self-Help",
+    "Psychology",
+    "Tech",
+    "Philosophy",
+    "Mythology",
+  ];
 
   return (
     <div className="space-y-12">
