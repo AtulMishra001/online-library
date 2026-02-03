@@ -1,4 +1,4 @@
-export const dummyData = [
+export const dummyBooks = [
   {
     "id": 1,
     "title": "Atomic Habits",

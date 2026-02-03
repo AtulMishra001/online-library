@@ -1,4 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Provider } from "react-redux";
+import  store  from "./redux/store.js";
 import Header from "./components/Header";
 
 // Import Pages (Create empty placeholders for these if they don't exist yet)
@@ -54,8 +56,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
+    <Provider store={store}>
 
       <RouterProvider router={router} />
+    </Provider>
 
   );
 }
