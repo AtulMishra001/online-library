@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@import "tailwindcss";
+
+/* Define the Memphis Theme variables */
+@theme {
+  /* Custom Colors */
+  --color-memphis-pink: #FF69B4;
+  --color-memphis-yellow: #FFD700;
+  --color-memphis-blue: #40E0D0;
+  --color-memphis-purple: #9370DB;
+  --color-memphis-bg: #FFF5EE;
+
+  /* Custom "Hard" Shadows */
+  --shadow-hard: 4px 4px 0px 0px #000000;
+  --shadow-hard-hover: 2px 2px 0px 0px #000000;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--color-memphis-bg);
+  color: #000000;
+  /* Polka dot pattern for that 80s vibe */
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 10px 10px;
+}
