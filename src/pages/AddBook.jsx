@@ -100,7 +100,7 @@ const AddBook = () => {
             <p className="text-red-600 font-bold mt-1">{errors.author}</p>
           )}
         </div>
-        {/*URL field*/}
+        {/* URL */}
         <div>
           <label className="block font-bold mb-2">Cover URL</label>
           <input

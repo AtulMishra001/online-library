@@ -47,7 +47,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 3. Popular Books Section (FIXED LAYOUT) */}
+      {/* 3. Popular Books Section*/}
       <section>
         <h2 className="text-3xl font-black mb-6 border-b-4 border-black inline-block">
           Popular Reads
@@ -59,8 +59,6 @@ const Home = () => {
               key={book.id}
               className="bg-white border-4 border-black shadow-hard flex flex-col h-full hover:-translate-y-2 transition-transform duration-300"
             >
-              {/* --- IMAGE FIX START --- */}
-              {/* Container for the image to enforce size and border */}
               <div className="w-full h-64 border-b-4 border-black overflow-hidden bg-gray-100 relative">
                 <img
                   src={book.url}
@@ -68,12 +66,10 @@ const Home = () => {
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                {/* Optional: Overlay tag for visual flair */}
                 <span className="absolute top-2 right-2 bg-memphis-yellow text-xs font-black px-2 py-1 border-2 border-black">
                   POPULAR
                 </span>
               </div>
-              {/* --- IMAGE FIX END --- */}
 
               <div className="p-4 flex flex-col flex-grow">
                 <h3 className="text-2xl font-black mb-2 leading-tight">
