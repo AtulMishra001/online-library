@@ -10,7 +10,7 @@ const booksSlice = createSlice({
     // action to add a new book.
     addBook: (state, action) => {
       // Logic to add a new book
-      state.books.push(action.payload);
+      state.items.push(action.payload);
     },
   },
 });
