@@ -4,37 +4,37 @@ A vibrant, responsive Single Page Application (SPA) for managing a book collecti
 
 ## 🚀 Features
 
-### [cite_start]1. Home Page [cite: 67-70]
+### 1. Home Page
 * **Welcome Section:** A bold landing area introducing the library.
 * **Categories:** Quick links to filter books by genre (Fiction, Sci-Fi, etc.).
 * **Popular Books:** A featured section displaying top-rated books with cover images.
 * **Dynamic Header:** Shows the live count of books currently in the library (fetched via Redux).
 
-### [cite_start]2. Browse Books [cite: 71-76]
+### 2. Browse Books
 * **Category Filtering:** URL-based filtering (e.g., `/books/Sci-Fi`).
 * **Search Functionality:** Real-time search bar that filters by **Title** or **Author**.
 * **Responsive Grid:** Cards adjust layout automatically for mobile and desktop.
 
-### [cite_start]3. Book Details [cite: 77-80]
+### 3. Book Details
 * **Dynamic Routing:** Fetches specific book data based on the ID in the URL (`/book/:id`).
 * **Detailed View:** Shows full description, rating, author, and category.
 * **Navigation:** Includes a "Back to Browse" button to preserve user flow.
 
-### [cite_start]4. Add Book (Redux Integrated) [cite: 81-87]
+### 4. Add Book (Redux Integrated)
 * **State Management:** Uses **Redux Toolkit** to add new books to the global store.
 * **Form Validation:** Prevents submission if fields (Title, Author, Rating) are empty or invalid.
 * **Auto-Redirect:** Automatically navigates the user to the Browse page upon successful addition.
 
-### [cite_start]5. Custom 404 Page [cite: 88-92]
+### 5. Custom 404 Page
 * **Layout Logic:** Displays a custom error message **without the Header** (as per assignment requirements).
 * **Routing Info:** dynamic display of the invalid URL that was accessed.
 
 ## 🛠️ Tech Stack
 
-* [cite_start]**Frontend Framework:** React (Vite) [cite: 66]
-* [cite_start]**State Management:** Redux Toolkit (`createSlice`, `useSelector`, `useDispatch`) [cite: 83]
-* [cite_start]**Routing:** React Router DOM (v6 Data Router with Layouts) [cite: 74]
-* [cite_start]**Styling:** Tailwind CSS (Custom Memphis Theme Configuration) [cite: 95]
+* **Frontend Framework:** React (Vite) 
+* **State Management:** Redux Toolkit (`createSlice`, `useSelector`, `useDispatch`) 
+* **Routing:** React Router DOM (v6 Data Router with Layouts) 
+* **Styling:** Tailwind CSS (Custom Memphis Theme Configuration) 
 
 ## ⚙️ Installation & Run Instructions
 
@@ -91,14 +91,6 @@ online-library/
 ├── README.md               # Project documentation
 └── vite.config.js          # Vite Bundler configuration
 ```
-
-## 🎨 Design Philosophy: Memphis Style
-
-Instead of a standard "clean" look, this project uses a customized **Tailwind Theme** to implement the **Memphis Design** language:
-* **Hard Shadows:** `box-shadow: 4px 4px 0px 0px #000;`
-* **Bold Colors:** `memphis-pink (#FF69B4)`, `memphis-yellow (#FFD700)`, `memphis-blue (#40E0D0)`.
-* **Geometric Borders:** Thick `border-4 border-black` on cards and inputs.
-
 ---
 *Submitted for React Assignment: Online Library System.*
 
