@@ -2,7 +2,7 @@ import { useRouteError, Link } from "react-router-dom";
 
 const NotFound = () => {
   const error = useRouteError(); // Hook to get error details (like the URL)
-
+  console.log(error)
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center p-4 bg-memphis-yellow">
       {/* Big Geometric Box */}
@@ -13,17 +13,17 @@ const NotFound = () => {
 
         <h2 className="text-3xl font-bold mb-4 uppercase">Page Not Found</h2>
 
-        <p className="text-xl mb-6 font-medium">
+        <p className="text-xl font-medium">
           Oops! The page you are looking for at:
           <br />
           {/* Displaying the invalid route/error message */}
-          <span className="bg-black text-white px-2 py-1 mt-2 inline-block font-mono">
-            {error?.statusText || error?.message || window.location.pathname}
-          </span>
+        <span className="bg-black text-white px-2 py-1 mt-2 inline-block font-mono">
+          {error?.data.split(" ")[5]}
+        </span>
           <br />
           does not exist.
         </p>
-
+        <br/>
         {/* Back to Home Button */}
         <Link
           to="/"

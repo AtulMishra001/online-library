@@ -32,7 +32,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />, // Valid routes get the Header
-    errorElement: <NotFound />, // 404 Page gets NO Header (Requirement Met)
+    errorElement: <NotFound />, // 404 Page gets NO Header 
     children: [
       {
         path: "/",
